@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deine Webseite</title>
+    <style>
+        /* Allgemeine Body-Einstellungen */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #000;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Logo */
+        .logo {
+            height: 50px; /* gleiche Größe wie vorher */
+            width: auto;
+        }
+
+        /* Navigation Buttons */
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            background-color: #111;
+            color: #fff;
+            border: 2px solid #333;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /* Hover Effekt */
+        .nav-btn:hover {
+            background-color: #222;
+            box-shadow: 0 0 10px #ff0; /* Leuchteffekt beim Hover */
+        }
+
+        /* Content Bereich */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Platzhalter Buttons/Links */
+        .placeholder {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px 40px;
+            background-color: #111;
+            border: 2px solid #333;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .placeholder:hover {
+            background-color: #222;
+            box-shadow: 0 0 15px #0f0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+            background-color: #000;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 10px;
+                flex-wrap: wrap;
+            }
+
+            .nav-btn {
+                margin: 5px 5px 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="dein-logo.png" alt="Logo" class="logo">
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <nav>
+            <button class="nav-btn" onclick="return false;">Staking</button>
+            <button class="nav-btn" onclick="return false;">Dashboard</button>
+            <button class="nav-btn" onclick="return false;">Open Sandbox</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Willkommen auf deiner Webseite</h1>
+        <p>Hier kannst du deinen Content hinzufügen.</p>
+
+        <div class="placeholder">Beispiel-Button 1</div>
+        <div class="placeholder">Beispiel-Button 2</div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Deine Webseite. Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
